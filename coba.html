@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sabar</title>
-    <link rel="stylesheet" href="style1.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sabar</title>
+  <link rel="stylesheet" href="style1.css">
 </head>
+
 <body>
-    
-<div class="content">
+
+  <div class="content" id="1">
     <div class="cuboid">
       <div class="side"></div>
       <div class="side"></div>
@@ -139,5 +141,22 @@
       <div class="side"></div>
     </div>
   </div>
+  <div id="2" style="position: absolute; top:62% ;">
+    <h1 style="color: white;font-size: 20px;">loading</h1>
+  </div>
+
+  <div id="3" style="display:none; color: white;" >
+    <h1> Prank hehehe</h1>
+  </div>
+
+  <script> 
+    const waktu = setTimeout(ganti,60000);
+    function ganti(){
+      document.getElementById("1").style.display = "none";
+      document.getElementById("2").style.display = "none";
+      document.getElementById("3").style.display = "block";
+    }
+  </script>
 </body>
+
 </html>
